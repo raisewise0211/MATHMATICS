@@ -26,11 +26,11 @@ $$ \quad q_x' = \frac{q_x}{\|Q\|}, \quad q_y' = \frac{q_y}{\|Q\|}, \quad q_z' = 
 
     + 오일러 각을 쿼터니언으로 변환, 오일러(t_x,t_y,t_z)
 
-    $$ s_x = sin(t_x / 2), c_x = cos(t_x / 2) $$
+$$ s_x = sin(t_x / 2), c_x = cos(t_x / 2) $$
 
-    $$ s_y = sin(t_y / 2), c_y = cos(t_y / 2) $$
+$$ s_y = sin(t_y / 2), c_y = cos(t_y / 2) $$
 
-    $$ s_z = sin(t_x / 2), c_z = cos(t_z / 2) $$
+$$ s_z = sin(t_x / 2), c_z = cos(t_z / 2) $$
 
     $$ q_x = s_x*c_y*c_z + c_x*s_y*s_z $$
 
