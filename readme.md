@@ -10,3 +10,7 @@ Q_raw = [q_x, q_y, q_z, q_w]가 주어질 때, 쿼터니언의 크기를 1로 �
 Q = sqrt((q_x)^2+(q_y)^2+(q_z)^2+(q_w)^2)
 
 q_x' = \frac{q_x}{\|Q\|}, \quad q_y' = \frac{q_y}{\|Q\|}, \quad q_z' = \frac{q_z}{\|Q\|}, \quad q_w' = \frac{q_w}{\|Q\|}
+
+For a normalized quaternion \( Q_{\text{normed}} = [q_x', q_y', q_z', q_w'] \):
+
+\( q_x' = \frac{q_x}{\|Q\|}, \quad q_y' = \frac{q_y}{\|Q\|}, \quad q_z' = \frac{q_z}{\|Q\|}, \quad q_w' = \frac{q_w}{\|Q\|} \)
