@@ -1,15 +1,15 @@
 import numpy as np
 
 # 3자유도 로봇의 DH 파라미터 (예시값, 실제 로봇에 맞게 수정 필요)
-D1 = 1.0
-D2 = 1.0
-D3 = 1.0
+D1 = 0.5
+D2 = 0.5
+D3 = 0.5
 
 # [theta, d, a, alpha]
 dh_params = [
-    [0,     D1,      0,      np.pi/2 ],   # 링크 1
-    [0,     D2,      0,      -np.pi/2],   # 링크 2
-    [0,     D3,      0,      0      ]    # 링크 3
+    [0,     D1,      0,     np.pi/2],   # 링크 1
+    [0,     0,      D2,     np.pi/2],   # 링크 2
+    [0,     0,      D3,     0]    # 링크 3
 ]
 
 def dh_transform(theta, d, a, alpha):
@@ -96,7 +96,7 @@ zs = np.round(zs, 2)
 ax.plot(xs, ys, zs, '-o', label='Robot Arm', markersize=8)
 
 # 각 조인트에 텍스트 추가
-joint_labels = ["joint1", "joint2", "joint3", "end_effector"]
+joint_labels = ["base", "joint1", "joint2", "end_effector"]
 for i, label in enumerate(joint_labels):
     x_val = xs[i]
     y_val = ys[i]
