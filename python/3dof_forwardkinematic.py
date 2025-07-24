@@ -87,13 +87,22 @@ xs = positions[:, 0]
 ys = positions[:, 1]
 zs = positions[:, 2]
 
+# 소수점 둘째자리로 반올림
+xs = np.round(xs, 2)
+ys = np.round(ys, 2)
+zs = np.round(zs, 2)
+
 # 로봇 팔 그리기
 ax.plot(xs, ys, zs, '-o', label='Robot Arm', markersize=8)
 
 # 각 조인트에 텍스트 추가
 joint_labels = ["joint1", "joint2", "joint3", "end_effector"]
 for i, label in enumerate(joint_labels):
-    ax.text(xs[i], ys[i], zs[i], label, fontsize=12, color='blue')
+    x_val = xs[i]
+    y_val = ys[i]
+    z_val = zs[i]
+    coord_str = f"({x_val:.2f}, {y_val:.2f}, {z_val:.2f})"
+    ax.text(x_val, y_val, z_val, f"{label} {coord_str}", fontsize=12, color='blue')
 
 # 엔드이펙터 강조
 ax.scatter(xs[-1], ys[-1], zs[-1], color='red', s=100, label='End Effector')
