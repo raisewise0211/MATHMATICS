@@ -14,7 +14,7 @@ def forward_kinematics(joint_angles):
     dh_params = [
         [0,     D1,      0,      np.pi/2 ],   # 링크 1
         [0,     D2,      0,      -np.pi/2],   # 링크 2
-        [0,     D3,      0,      0      ]    # 링크 3
+        [0,     D3,      0,      np.pi/2      ]    # 링크 3
     ]
     positions = [np.array([0, 0, 0, 1])]  # base(원점)
     T = np.identity(4)
