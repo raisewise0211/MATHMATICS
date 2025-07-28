@@ -167,42 +167,6 @@ $$ \tanh'(x) = 1 - \tanh^2(x) $$
 
 ---
 
-## 📈 Visualization
-
-### Sigmoid Function Graph
-
-시그모이드 함수의 그래프를 시각화합니다.
-
-### Tanh Function Graph
-
-쌍곡선 탄젠트 함수의 그래프를 시각화합니다.
-
-### 3D Robot Arm Visualization
-
-3자유도 로봇 팔의 3D 시각화를 제공합니다.
-
-#### 관절 위치 계산
-$$ P_i = T_1 \cdot T_2 \cdot ... \cdot T_i \cdot \begin{bmatrix} 0 \\ 0 \\ 0 \\ 1 \end{bmatrix} $$
-
-여기서 $P_i$는 $i$번째 관절의 3D 위치입니다.
-
----
-
-## 🛠️ Implementation
-
-### C++ Implementation
-
-- Quaternion 클래스: 쿼터니언 연산 및 오일러 각 변환
-- Differential Kinematics 클래스: 차동 구동 로봇의 운동학 계산
-
-### Python Implementation
-
-- Quaternion 클래스: 쿼터니언 정규화 및 변환
-- GVDPlanner 클래스: 일반화된 Voronoi 다이어그램 및 A* 경로 계획
-- 3DOF Kinematics: 순기구학 및 역기구학 계산
-
----
-
 ## 🚀 Usage
 
 ### C++ 실행
